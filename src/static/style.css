@@ -1,0 +1,17 @@
+body{
+	color: DarkSlateGray;
+}
+
+h1,h2{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h1{
+	font-size: 2em;
+	margin-left: 1em;
+}
+
+h2{
+	font-size: 1em;
+}
