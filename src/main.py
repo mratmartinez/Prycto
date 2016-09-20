@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    rem = render_template('main.html')
+    rem = render_template('index.html')
     url_for('static', filename='style.css') 
     return rem
 
