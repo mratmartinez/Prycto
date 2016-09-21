@@ -14,6 +14,18 @@ def login():
     rem = render_template('login.html')
     return rem
 
+@app.route('/login/dropbox')
+def logdropbox():
+    url_for('static', filename='style.css')
+    rem = render_template('dropbox.html')
+    return rem
+
+@app.route('/login/google-drive')
+def loggd():
+    url_for('static', filename='style.css')
+    rem = render_template('google-drive.html')
+    return rem
+
 @app.route('/config')
 def config():
     url_for('static', filename='style.css')
