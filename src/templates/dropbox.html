@@ -1,12 +1,36 @@
 {% include 'main.html' %}
 	<div class="center-block">
 		<div class="row">
-			<div class="col-md-4"></div>
-			<div class="col-md-4">
-				<a href="/login/dropbox" role="button" class="btn btn-default">Dropbox</a>
-				<a href="/login/google-drive" role="button" class="btn btn-default">Google Drive</a>
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label for="usr">Username:</label>
+					<input type="text" class="form-control" id="usr">
+				</div>
 			</div>
-			<div class="col-md-4"></div>
+			<div class="col-sm-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label for="pwd">Password:</label>
+					<input type="password" class="form-control" id="pwd">
+				</div>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-2">
+				<div class="checkbox">
+					<label><input type="checkbox"> Remember</label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				  <button type="submit" class="btn btn-default">Submit</button>
+			</div>
+			<div class="col-sm-4"></div>
 		</div>
 	</div>
 </body>
