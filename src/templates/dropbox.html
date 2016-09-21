@@ -1,36 +1,18 @@
 {% include 'main.html' %}
 	<div class="center-block">
-		<div class="row">
-			<div class="col-sm-4"></div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="usr">Username:</label>
-					<input type="text" class="form-control" id="usr">
-				</div>
+		<form action="/login/google-drive" class="form" method="POST">
+			<div class="form-group">
+				<label for="usr">Username:</label>
+				<input type="text" class="form-control" id="usr" name="user">
 			</div>
-			<div class="col-sm-4"></div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4"></div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="pwd">Password:</label>
-					<input type="password" class="form-control" id="pwd">
-				</div>
+			<div class="form-group">
+				<label for="pwd">Password:</label>
+				<input type="password" class="form-control" id="pwd" name="password">
 			</div>
-			<div class="col-sm-4"></div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4"></div>
-			<div class="col-sm-2">
-				<div class="checkbox">
-					<label><input type="checkbox"> Remember</label>
-				</div>
+			<div class="checkbox">
+				<label><input type="checkbox"> Remember</label>
 			</div>
-			<div class="col-sm-2">
-				  <button type="submit" class="btn btn-default">Submit</button>
-			</div>
-			<div class="col-sm-4"></div>
-		</div>
+			<button type="submit" class="btn btn-default">Log In!</button>
+		</form>
 	</div>
 </body>
