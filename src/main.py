@@ -4,12 +4,24 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    rem = render_template('index.html')
     url_for('static', filename='style.css')
+    rem = render_template('index.html')
+    return rem
+
+@app.route('/login')
+def login():
+    url_for('static', filename='style.css')
+    rem = render_template('login.html')
+    return rem
+
+@app.route('/config')
+def config():
+    url_for('static', filename='style.css')
+    rem = render_template('config.html')
     return rem
 
 if __name__ == '__main__':
-	app.run(port=9080)
+    app.run(port=9080)
 
 """
  A guy called "ThiefMaster" in an IRC Channel told me that I can run

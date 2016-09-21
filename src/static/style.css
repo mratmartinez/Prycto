@@ -3,6 +3,7 @@ html{
 }
 
 body{
+	background: Aquamarine;
 	color: DarkSlateGray;
 	height: 100%;
 }
@@ -19,5 +20,5 @@ h1{
 
 h2{
 	font-size: 1em;
+	margin-left: 0.8em;
 }
-
