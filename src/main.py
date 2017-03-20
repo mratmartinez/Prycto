@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template, url_for, request, abort
 app = Flask(__name__)
 
 @app.route('/')
@@ -14,26 +14,18 @@ def login():
     rem = render_template('login.html')
     return rem
 
-@app.route('/login/dropbox', methods=['POST', 'GET'])
+@app.route('/login/dropbox')
 def logdropbox():
     error = None
     url_for('static', filename='style.css')
     rem = render_template('dropbox.html')
-    if request.method == 'POST':
-    	print(request.form['user'],request.form['password'])
-    else:
-        abort(400)
     return rem
 
-@app.route('/login/google-drive', methods=['POST', 'GET'])
+@app.route('/login/google-drive')
 def loggd():
     error = None
     url_for('static', filename='style.css')
     rem = render_template('google-drive.html')
-    if request.method == 'POST':
-    	print(request.form['user'],request.form['password'])
-    else:
-   		abort(400)
     return rem
 
 @app.route('/config')
